@@ -68,7 +68,7 @@ __all__ = ["BaseModel"]
 - In `migrations/env.py`, import your models and set:
 
 ```python
-from database import Base
+from models.base import Base # Import the base connetion for the DB form BaseModel
 import models # Import all models to register them
 
 target_metadata = Base.metadata
