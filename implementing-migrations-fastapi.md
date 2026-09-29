@@ -37,7 +37,7 @@ This creates a `migrations/` folder and `alembic.ini` config file.
 ```python
 import os
 
-database_url = os.environ.get("DB_URI")
+database_url = os.environ.get("DATABASE_URL")
 
 if database_url:
         config.set_main_option("sqlalchemy.url", database_url)
